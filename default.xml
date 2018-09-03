@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="oe" fetch="git://git.openembedded.org/" />
+  <remote name="yocto" fetch="git://git.yoctoproject.org/" />
+
   <default revision="master" remote="oe" />
 
   <project path="bitbake" name="bitbake" />
   <project path="openembedded-core" name="openembedded-core" />
   <project path="meta-openembedded" name="meta-openembedded" />
+
+  <project path="meta-yocto" name="meta-yocto" remote="yocto" />
 
 </manifest>
